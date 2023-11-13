@@ -7,8 +7,11 @@
     <h1 class="h1 text-center">Welcome to your Dashboard</h1>
 
     <% for (let i=0; i<userData.length; i++) { %>
-      <p><%= userData[i].title %></p>
-      <%= userData[i].body %>
+      <div class="container border"></div>
+        <p>Posted by User <%= userData[i].userId %></p>
+        <p><%= userData[i].title %></p>
+        <p><%= userData[i].body %></p>
+      </div>
     <% } %>
   </div>
 <div class="container">
