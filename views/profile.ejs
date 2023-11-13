@@ -6,7 +6,21 @@
     <div class="container">
       <h1 class="h1 text-center">Profile Page</h1>
     </div>
-  
+      <div class="container">
+        <p>Full Name: <%= profileData[i].name %></p>
+        <p>Username: @<%= profileData[i].username %></p>
+        <p>Email: <%= profileData[i].email %></p>
+        <p>Phone Number: <%= profileData[i].phone %></p>
+          <p class="font-weight-bold">Address</p>
+          <div class="container">
+          <p><%= profileData[i].address.street %>, <%= profileData[i].address.suite %></p>
+          <p><%= profileData[i].address.city %> <%= profileData[i].address.zipcode %></p>
+        </div>
+      <div class="container">
+        <p>Company Name: <%= profileData[i].company.name %></p>
+      </div>
+        </div>
+      </div>
       <%- include ./partials/scripts %>
   </body>
   </html>
