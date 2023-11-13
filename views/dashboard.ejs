@@ -5,6 +5,11 @@
   <%- include ./partials/navbar %>
   <div class="container">
     <h1 class="h1 text-center">Welcome to your Dashboard</h1>
+
+    <% for (let i=0; i<userData.length; i++) { %>
+      <p><%= userData[i].title %></p>
+      <%= userData[i].body %>
+    <% } %>
   </div>
 <div class="container">
   <a href="/"><button>Log Out</button></a>
